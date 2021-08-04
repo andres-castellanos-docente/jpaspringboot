@@ -1,54 +1,4 @@
---
--- PostgreSQL database dump
---
 
--- Dumped from database version 13.2
--- Dumped by pg_dump version 13.2
-
--- Started on 2021-07-26 21:12:12 -05
-
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET idle_in_transaction_session_timeout = 0;
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SELECT pg_catalog.set_config('search_path', '', false);
-SET check_function_bodies = false;
-SET xmloption = content;
-SET client_min_messages = warning;
-SET row_security = off;
-
---
--- TOC entry 3365 (class 1262 OID 24711)
--- Name: prueba; Type: DATABASE; Schema: -; Owner: usrprueba
---
-
-CREATE DATABASE prueba WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE = 'C';
-
-
-ALTER DATABASE prueba OWNER TO usrprueba;
-
-\connect prueba
-
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET idle_in_transaction_session_timeout = 0;
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SELECT pg_catalog.set_config('search_path', '', false);
-SET check_function_bodies = false;
-SET xmloption = content;
-SET client_min_messages = warning;
-SET row_security = off;
-
-SET default_tablespace = '';
-
-SET default_table_access_method = heap;
-
---
--- TOC entry 210 (class 1259 OID 24809)
--- Name: cb_address; Type: TABLE; Schema: public; Owner: usrprueba
---
 
 CREATE TABLE public.cb_address (
     idaddress integer NOT NULL,
@@ -71,7 +21,7 @@ CREATE TABLE public.cb_address (
 ALTER TABLE public.cb_address OWNER TO usrprueba;
 
 --
--- TOC entry 3366 (class 0 OID 0)
+-- TOC entry 3365 (class 0 OID 0)
 -- Dependencies: 210
 -- Name: TABLE cb_address; Type: COMMENT; Schema: public; Owner: usrprueba
 --
@@ -96,7 +46,7 @@ CREATE SEQUENCE public.cb_address_idaddress_seq
 ALTER TABLE public.cb_address_idaddress_seq OWNER TO usrprueba;
 
 --
--- TOC entry 3367 (class 0 OID 0)
+-- TOC entry 3366 (class 0 OID 0)
 -- Dependencies: 209
 -- Name: cb_address_idaddress_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: usrprueba
 --
@@ -118,7 +68,7 @@ CREATE TABLE public.cb_addresses (
 ALTER TABLE public.cb_addresses OWNER TO usrprueba;
 
 --
--- TOC entry 3368 (class 0 OID 0)
+-- TOC entry 3367 (class 0 OID 0)
 -- Dependencies: 208
 -- Name: TABLE cb_addresses; Type: COMMENT; Schema: public; Owner: usrprueba
 --
@@ -143,7 +93,7 @@ CREATE SEQUENCE public.cb_addresses_idaddresses_seq
 ALTER TABLE public.cb_addresses_idaddresses_seq OWNER TO usrprueba;
 
 --
--- TOC entry 3369 (class 0 OID 0)
+-- TOC entry 3368 (class 0 OID 0)
 -- Dependencies: 207
 -- Name: cb_addresses_idaddresses_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: usrprueba
 --
@@ -177,7 +127,7 @@ CREATE TABLE public.cb_country (
 ALTER TABLE public.cb_country OWNER TO usrprueba;
 
 --
--- TOC entry 3370 (class 0 OID 0)
+-- TOC entry 3369 (class 0 OID 0)
 -- Dependencies: 204
 -- Name: TABLE cb_country; Type: COMMENT; Schema: public; Owner: usrprueba
 --
@@ -202,7 +152,7 @@ CREATE SEQUENCE public.cb_country_idcountry_seq
 ALTER TABLE public.cb_country_idcountry_seq OWNER TO usrprueba;
 
 --
--- TOC entry 3371 (class 0 OID 0)
+-- TOC entry 3370 (class 0 OID 0)
 -- Dependencies: 203
 -- Name: cb_country_idcountry_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: usrprueba
 --
@@ -247,7 +197,7 @@ CREATE SEQUENCE public.cb_currency_idcurrency_seq
 ALTER TABLE public.cb_currency_idcurrency_seq OWNER TO usrprueba;
 
 --
--- TOC entry 3372 (class 0 OID 0)
+-- TOC entry 3371 (class 0 OID 0)
 -- Dependencies: 200
 -- Name: cb_currency_idcurrency_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: usrprueba
 --
@@ -282,7 +232,7 @@ CREATE TABLE public.cb_customer (
 ALTER TABLE public.cb_customer OWNER TO usrprueba;
 
 --
--- TOC entry 3373 (class 0 OID 0)
+-- TOC entry 3372 (class 0 OID 0)
 -- Dependencies: 214
 -- Name: TABLE cb_customer; Type: COMMENT; Schema: public; Owner: usrprueba
 --
@@ -307,7 +257,7 @@ CREATE SEQUENCE public.cb_customer_idcustomer_seq
 ALTER TABLE public.cb_customer_idcustomer_seq OWNER TO usrprueba;
 
 --
--- TOC entry 3374 (class 0 OID 0)
+-- TOC entry 3373 (class 0 OID 0)
 -- Dependencies: 213
 -- Name: cb_customer_idcustomer_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: usrprueba
 --
@@ -339,7 +289,7 @@ CREATE TABLE public.cb_enterprise (
 ALTER TABLE public.cb_enterprise OWNER TO usrprueba;
 
 --
--- TOC entry 3375 (class 0 OID 0)
+-- TOC entry 3374 (class 0 OID 0)
 -- Dependencies: 212
 -- Name: TABLE cb_enterprise; Type: COMMENT; Schema: public; Owner: usrprueba
 --
@@ -364,7 +314,7 @@ CREATE SEQUENCE public.cb_enterprise_identerprise_seq
 ALTER TABLE public.cb_enterprise_identerprise_seq OWNER TO usrprueba;
 
 --
--- TOC entry 3376 (class 0 OID 0)
+-- TOC entry 3375 (class 0 OID 0)
 -- Dependencies: 211
 -- Name: cb_enterprise_identerprise_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: usrprueba
 --
@@ -391,7 +341,7 @@ CREATE TABLE public.cb_language (
 ALTER TABLE public.cb_language OWNER TO usrprueba;
 
 --
--- TOC entry 3377 (class 0 OID 0)
+-- TOC entry 3376 (class 0 OID 0)
 -- Dependencies: 202
 -- Name: TABLE cb_language; Type: COMMENT; Schema: public; Owner: usrprueba
 --
@@ -400,7 +350,7 @@ COMMENT ON TABLE public.cb_language IS 'Como clave primaria usamos la codificaci
 
 
 --
--- TOC entry 3378 (class 0 OID 0)
+-- TOC entry 3377 (class 0 OID 0)
 -- Dependencies: 202
 -- Name: COLUMN cb_language.idlanguage; Type: COMMENT; Schema: public; Owner: usrprueba
 --
@@ -409,7 +359,7 @@ COMMENT ON COLUMN public.cb_language.idlanguage IS 'Como clave primaria usamos l
 
 
 --
--- TOC entry 3379 (class 0 OID 0)
+-- TOC entry 3378 (class 0 OID 0)
 -- Dependencies: 202
 -- Name: COLUMN cb_language.namelanguage; Type: COMMENT; Schema: public; Owner: usrprueba
 --
@@ -434,7 +384,7 @@ CREATE TABLE public.cb_paymentmethod (
 ALTER TABLE public.cb_paymentmethod OWNER TO usrprueba;
 
 --
--- TOC entry 3380 (class 0 OID 0)
+-- TOC entry 3379 (class 0 OID 0)
 -- Dependencies: 206
 -- Name: TABLE cb_paymentmethod; Type: COMMENT; Schema: public; Owner: usrprueba
 --
@@ -459,7 +409,7 @@ CREATE SEQUENCE public.cb_paymentmethod_idpaymentmethod_seq
 ALTER TABLE public.cb_paymentmethod_idpaymentmethod_seq OWNER TO usrprueba;
 
 --
--- TOC entry 3381 (class 0 OID 0)
+-- TOC entry 3380 (class 0 OID 0)
 -- Dependencies: 205
 -- Name: cb_paymentmethod_idpaymentmethod_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: usrprueba
 --
@@ -545,6 +495,8 @@ ALTER TABLE ONLY public.cb_paymentmethod ALTER COLUMN idpaymentmethod SET DEFAUL
 -- Data for Name: cb_country; Type: TABLE DATA; Schema: public; Owner: usrprueba
 --
 
+INSERT INTO public.cb_country (idcountry, country, description, countrycode, hasregion, regionname, expressionphone, displaysequence, isdefault, ibannodigits, ibancountry, isactive, idlanguage, idcurrency) VALUES (9, 'Colombia
+', 'colombia', 'CO', false, 'n/a', '57', '1', true, NULL, NULL, true, NULL, NULL);
 
 
 --
@@ -553,6 +505,7 @@ ALTER TABLE ONLY public.cb_paymentmethod ALTER COLUMN idpaymentmethod SET DEFAUL
 -- Data for Name: cb_currency; Type: TABLE DATA; Schema: public; Owner: usrprueba
 --
 
+INSERT INTO public.cb_currency (idcurrency, currency, description, isactive, isocode, cursymbol, precisionstd, precisioncost, precisionprize) VALUES (1, 'PESO COLOMBIANO', 'Moneda de colombia', true, '57 ', 'aasdasd', 10.00, 10.00, 10.00);
 
 
 --
@@ -577,6 +530,7 @@ ALTER TABLE ONLY public.cb_paymentmethod ALTER COLUMN idpaymentmethod SET DEFAUL
 -- Data for Name: cb_language; Type: TABLE DATA; Schema: public; Owner: usrprueba
 --
 
+INSERT INTO public.cb_language (idlanguage, namelanguage, isactive, languageiso, countrycode, isbaselanguage, issystemlanguage) VALUES ('1', 'español', true, '57', '57', true, false);
 
 
 --
@@ -588,7 +542,7 @@ ALTER TABLE ONLY public.cb_paymentmethod ALTER COLUMN idpaymentmethod SET DEFAUL
 
 
 --
--- TOC entry 3382 (class 0 OID 0)
+-- TOC entry 3381 (class 0 OID 0)
 -- Dependencies: 209
 -- Name: cb_address_idaddress_seq; Type: SEQUENCE SET; Schema: public; Owner: usrprueba
 --
@@ -597,7 +551,7 @@ SELECT pg_catalog.setval('public.cb_address_idaddress_seq', 1, false);
 
 
 --
--- TOC entry 3383 (class 0 OID 0)
+-- TOC entry 3382 (class 0 OID 0)
 -- Dependencies: 207
 -- Name: cb_addresses_idaddresses_seq; Type: SEQUENCE SET; Schema: public; Owner: usrprueba
 --
@@ -606,25 +560,25 @@ SELECT pg_catalog.setval('public.cb_addresses_idaddresses_seq', 1, false);
 
 
 --
--- TOC entry 3384 (class 0 OID 0)
+-- TOC entry 3383 (class 0 OID 0)
 -- Dependencies: 203
 -- Name: cb_country_idcountry_seq; Type: SEQUENCE SET; Schema: public; Owner: usrprueba
 --
 
-SELECT pg_catalog.setval('public.cb_country_idcountry_seq', 1, false);
+SELECT pg_catalog.setval('public.cb_country_idcountry_seq', 9, true);
 
 
 --
--- TOC entry 3385 (class 0 OID 0)
+-- TOC entry 3384 (class 0 OID 0)
 -- Dependencies: 200
 -- Name: cb_currency_idcurrency_seq; Type: SEQUENCE SET; Schema: public; Owner: usrprueba
 --
 
-SELECT pg_catalog.setval('public.cb_currency_idcurrency_seq', 1, false);
+SELECT pg_catalog.setval('public.cb_currency_idcurrency_seq', 1, true);
 
 
 --
--- TOC entry 3386 (class 0 OID 0)
+-- TOC entry 3385 (class 0 OID 0)
 -- Dependencies: 213
 -- Name: cb_customer_idcustomer_seq; Type: SEQUENCE SET; Schema: public; Owner: usrprueba
 --
@@ -633,7 +587,7 @@ SELECT pg_catalog.setval('public.cb_customer_idcustomer_seq', 1, false);
 
 
 --
--- TOC entry 3387 (class 0 OID 0)
+-- TOC entry 3386 (class 0 OID 0)
 -- Dependencies: 211
 -- Name: cb_enterprise_identerprise_seq; Type: SEQUENCE SET; Schema: public; Owner: usrprueba
 --
@@ -642,7 +596,7 @@ SELECT pg_catalog.setval('public.cb_enterprise_identerprise_seq', 1, false);
 
 
 --
--- TOC entry 3388 (class 0 OID 0)
+-- TOC entry 3387 (class 0 OID 0)
 -- Dependencies: 205
 -- Name: cb_paymentmethod_idpaymentmethod_seq; Type: SEQUENCE SET; Schema: public; Owner: usrprueba
 --
@@ -893,9 +847,8 @@ ALTER TABLE ONLY public.cb_enterprise
     ADD CONSTRAINT fk_cb_enterprise_idcurrency FOREIGN KEY (idcurrency) REFERENCES public.cb_currency(idcurrency);
 
 
--- Completed on 2021-07-26 21:12:12 -05
+-- Completed on 2021-08-04 18:31:12 -05
 
 --
 -- PostgreSQL database dump complete
 --
-
